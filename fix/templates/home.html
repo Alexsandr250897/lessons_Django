@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Дополнительная информация о странице -->
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+
+    <!-- Добавляем ссылку на файл стилей -->
+{#    <link rel="stylesheet" href="/static-files/main.css">#}
+
+</head>
+<body>
+<!-- Тут располагается отображаемое содержимое  -->
+    <h1 class="header">Hello, World!</h1>
+    Тестовое приложение Django.
+
+    <div style="padding-top: 20px;">
+        <!-- Ссылка (Только метод GET) -->
+        <a href="/create">Создать запись</a>
+    </div>
+
+    <div class="content">
+
+        <!-- Создаем цикл, чтобы перебирать записи -->
+        {% for note in notes %}
+            <div class="card">
+                <h3><a href="/note/{{ note.uuid }}">{{ note.title }}</a></h3>
+                <div>{{ note.created_at }}</div>
+            </div>
+        {% endfor %} <!-- Обязательно закрываем цикл -->
+
+    </div>
+
+</body>
+</html>

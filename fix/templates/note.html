@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ note.title }}</title>
+{#    <link rel="stylesheet" href="/static-files/main.css">#}
+</head>
+<body>
+
+    <h2 class="header">{{ note.title | upper }}</h2>
+
+    <p>Datetime: {{ note.created_at }}</p>
+
+    <div>{{ note.content | linebreaks }}</div>
+
+</body>
+</html>

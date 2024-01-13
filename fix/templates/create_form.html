@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание заметки</title>
+{#    <link rel="stylesheet" href="/static-files/main.css">#}
+{#    <link rel="stylesheet" href="/static-files/register.css">#}
+
+</head>
+<body>
+
+    <h1 class="header">Создание заметки</h1>
+
+    <form action="/create" method="post">
+        {% csrf_token %}
+        <!-- Блок title -->
+        <div class="input-block">
+            <span>Заголовок</span>
+            <div>
+                <input class="input-form" name="title" type="text">
+            </div>
+        </div>
+
+        <!-- Блок описания -->
+        <div class="input-block">
+            <span>Описание</span>
+            <div>
+                <textarea rows="6" cols="22" name="content"></textarea>
+            </div>
+        </div>
+
+        <!-- Блок кнопки -->
+        <div class="input-block">
+            <input class="form-button" type="submit" value="Создать">
+        </div>
+
+    </form>
+
+</body>
+</html>
