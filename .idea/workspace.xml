@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e59e82a2-77e4-49a2-849c-1fd2316e4864" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lessons_Django.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix/templates/create_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix/templates/note.html" afterDir="false" />
+    <list default="true" id="e59e82a2-77e4-49a2-849c-1fd2316e4864" name="Changes" comment="seting Django">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/43ad961e-bb14-4b1a-9ca5-fe3638d79f00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/43ad961e-bb14-4b1a-9ca5-fe3638d79f00.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/fix/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix/fix/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fix/fix/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fix/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fix/posts/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +67,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705139867032</updated>
-      <workItem from="1705139869937" duration="8454000" />
+      <workItem from="1705139869937" duration="21684000" />
     </task>
+    <task id="LOCAL-00001" summary="seting Django">
+      <option name="closed" value="true" />
+      <created>1705157072375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705157072375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="seting Django" />
+    <option name="LAST_COMMIT_MESSAGE" value="seting Django" />
   </component>
 </project>

@@ -17,12 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from posts.views import home_page_view, create_note_view, show_note_view
+from posts.views import home_page_view, create_note_view , show_note_view
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", home_page_view),
-    path("create/", create_note_view),
-    path("not/<not_id>", show_note_view),
-
+    path("create", create_note_view),
+    path("note/<note_uuid>", show_note_view),
 ]
