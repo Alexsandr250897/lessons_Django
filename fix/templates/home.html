@@ -1,22 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Дополнительная информация о странице -->
-    <meta charset="UTF-8">
-    <title>Главная страница</title>
+{% extends 'base.html' %}
 
-    <!-- Добавляем ссылку на файл стилей -->
-{#    <link rel="stylesheet" href="/static-files/main.css">#}
+{%load static%}
 
-</head>
-<body>
+{% block title %}
+Блог заметок
+{% endblock %}
+
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock %}
+
+{% block content %}
 <!-- Тут располагается отображаемое содержимое  -->
     <h1 class="header">Hello, World!</h1>
     Тестовое приложение Django.
 
     <div style="padding-top: 20px;">
         <!-- Ссылка (Только метод GET) -->
-        <a href="/create">Создать запись</a>
+        <a href="{% url 'create-note' %}">Создать запись</a>
     </div>
 
     <div class="content">
@@ -24,12 +26,10 @@
         <!-- Создаем цикл, чтобы перебирать записи -->
         {% for note in notes %}
             <div class="card">
-                <h3><a href="/note/{{ note.uuid }}">{{ note.title }}</a></h3>
+                <h3><a href="{% url 'show-note' note.uuid %}">{{ note.title }}</a></h3>
                 <div>{{ note.created_at }}</div>
             </div>
         {% endfor %} <!-- Обязательно закрываем цикл -->
 
     </div>
-
-</body>
-</html>
+{% endblock %}

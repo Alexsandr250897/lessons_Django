@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.urls import reverse
+from django.http import HttpResponseRedirect, Http404
 from django.core.handlers.wsgi import WSGIRequest
 
 from .models import Note
@@ -17,11 +18,14 @@ def create_note_view(request:WSGIRequest):
         note = Note.objects.create(
             title=request.POST["title"],
             content=request.POST["content"])
-        return HttpResponseRedirect("/note/" + str(note.uuid))
+        return HttpResponseRedirect(reverse('show_note', args=[note.id]))
 
     return render(request, "create_form.html")
 
 
 def show_note_view(request:WSGIRequest, note_uuid):
-    note = Note.objects.get(uuid=note_uuid)
+    try:
+        note = Note.objects.get(uuid=note_uuid)
+    except Note.DoesNotExist:
+        raise Http404("Note not found")
     return render(request, "note.html", {"note": note})
