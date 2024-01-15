@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e59e82a2-77e4-49a2-849c-1fd2316e4864" name="Changes" comment="lessons 21">
-      <change afterPath="$PROJECT_DIR$/fix/static/css/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fix/templates/base.html" afterDir="false" />
+    <list default="true" id="e59e82a2-77e4-49a2-849c-1fd2316e4864" name="Changes" comment="lessons22">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fix/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fix/templates/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fix/templates/posts-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fix/templates/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/43ad961e-bb14-4b1a-9ca5-fe3638d79f00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/43ad961e-bb14-4b1a-9ca5-fe3638d79f00.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lessons_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lessons_Django.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fix/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/fix/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fix/fix/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fix/fix/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fix/fix/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fix/fix/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fix/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fix/posts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/fix/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fix/templates/create_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/fix/templates/create_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fix/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fix/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fix/templates/note.html" beforeDir="false" afterPath="$PROJECT_DIR$/fix/templates/note.html" afterDir="false" />
@@ -96,7 +99,8 @@
       <option name="presentableId" value="Default" />
       <updated>1705139867032</updated>
       <workItem from="1705139869937" duration="22882000" />
-      <workItem from="1705250448468" duration="12970000" />
+      <workItem from="1705250448468" duration="13362000" />
+      <workItem from="1705332581827" duration="10453000" />
     </task>
     <task id="LOCAL-00001" summary="seting Django">
       <option name="closed" value="true" />
@@ -114,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705245387260</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lessons22">
+      <option name="closed" value="true" />
+      <created>1705265955902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705265955902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="seting Django" />
     <MESSAGE value="lessons 21" />
-    <option name="LAST_COMMIT_MESSAGE" value="lessons 21" />
+    <MESSAGE value="lessons22" />
+    <option name="LAST_COMMIT_MESSAGE" value="lessons22" />
   </component>
 </project>

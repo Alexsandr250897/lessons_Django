@@ -22,7 +22,7 @@ from posts.views import home_page_view, create_note_view , show_note_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", home_page_view,name="home"),
-    path("create", create_note_view,name="create-note"),
-    path("note/<note_uuid>", show_note_view,name="show-note"),
+    path("", home_page_view ,name="home"),
+    path("create", create_note_view ,name="create-note"),
+    path("note/<note_uuid>", show_note_view, name="show-note"),
 ]

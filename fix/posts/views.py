@@ -18,7 +18,7 @@ def create_note_view(request:WSGIRequest):
         note = Note.objects.create(
             title=request.POST["title"],
             content=request.POST["content"])
-        return HttpResponseRedirect(reverse('show_note', args=[note.id]))
+        return HttpResponseRedirect(reverse('show-note', args=[note.uuid]))
 
     return render(request, "create_form.html")
 

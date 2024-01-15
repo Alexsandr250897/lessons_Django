@@ -12,24 +12,11 @@
 {% endblock %}
 
 {% block content %}
-<!-- Тут располагается отображаемое содержимое  -->
-    <h1 class="header">Hello, World!</h1>
-    Тестовое приложение Django.
 
-    <div style="padding-top: 20px;">
-        <!-- Ссылка (Только метод GET) -->
-        <a href="{% url 'create-note' %}">Создать запись</a>
-    </div>
+    <div class="container">
 
-    <div class="content">
-
-        <!-- Создаем цикл, чтобы перебирать записи -->
-        {% for note in notes %}
-            <div class="card">
-                <h3><a href="{% url 'show-note' note.uuid %}">{{ note.title }}</a></h3>
-                <div>{{ note.created_at }}</div>
-            </div>
-        {% endfor %} <!-- Обязательно закрываем цикл -->
+        {% include 'welcome.html'%}
+        {% include 'posts-list.html' %}
 
     </div>
 {% endblock %}

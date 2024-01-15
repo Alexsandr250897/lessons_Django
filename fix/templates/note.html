@@ -5,9 +5,18 @@
 {% endblock %}
 
 {% block content %}
-    <h2 class="header">{{ note.title | upper }}</h2>
+    <div class="container">
 
-    <p>Datetime: {{ note.created_at }}</p>
+        <div class="text-center">
+            <h2 class="display-5 link-body-emphasis mb-1">{{ note.title | upper }}</h2>
 
-    <div>{{ note.content | linebreaks }}</div>
+            <p class="blog-post-meta">{{ note.created_at }}</p>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button">Удалить</button>
+            <button class="btn btn-primary" type="button">Редактировать</button>
+        </div>
+        <hr>
+        <div>{{ note.content | linebreaks }}</div>
+    </div>
 {%endblock%}
