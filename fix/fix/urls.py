@@ -15,14 +15,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include,re_path
+from django.contrib.auth.views import LoginView
+from django.conf.urls.static import serve
+from django.conf import settings
 
-from posts.views import home_page_view, create_note_view , show_note_view
+from posts import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", home_page_view ,name="home"),
-    path("create", create_note_view ,name="create-note"),
-    path("note/<note_uuid>", show_note_view, name="show-note"),
+    path('accounts/',include("django.contrib.auth.urls")),
+    path('accounts/register',views.register,name="register"),
+    path("",views.home_page_views ,name="home"),
+    path("filter", views.filter_notes_views ,name="filter-notes"),
+    path("create", views.create_note_views ,name="create-note"),
+    path("note/<note_uuid>", views.show_note_views, name="show-note"),
+    # path("note/<note_uuid>/edit", views.edit_note_views, name="edit-note"),
+    path("note/<note_uuid>/delete", views.delete_note_views, name="delete-note"),
+    re_path(r"^media/(?P<path>.*)$",serve,{"document_root":settings.MEDIA_ROOT}),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 ]

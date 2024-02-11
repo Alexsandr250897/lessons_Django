@@ -9,14 +9,27 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Главная</a>
         </li>
-        <li class="nav-item dropdown">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'create-note' %}">Создать</a>
-            </li>
+        {% if  user.is_authenticated %}
         </li>
+         <li class="nav-item dropdown">
+        <form action="{% url 'logout' %}"method="post">
+            {%csrf_token %}
+            <button class="nav-link" tupe="submit">Выйти</button>
+        </form>
+
+            </li>
+        {% else %}
+         </li>
+         <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Войти</a>
+            </li>
+        {% endif %}
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+
+      <form class="d-flex" action= "{%url 'filter-notes'%}">
+        <input name= "search" value= "{{search_value_form}}"
+               style = "width:400px " class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
         <button class="btn btn-outline-success" type="submit">Поиск</button>
       </form>
     </div>
